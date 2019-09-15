@@ -63,10 +63,13 @@ section.main {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
+  
+  @media screen and (max-width: 640px) {
+    grid-template-columns: 70% 1fr 1fr;
+  }
 
   h1 {
     grid-row-start: 2;
-    // grid-row-end: 1;
     grid-column-start: 1;
     grid-column-end: span 2;
     background-color: black;
